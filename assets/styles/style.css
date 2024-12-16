@@ -40,7 +40,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  overflow: auto; /* Prevents internal content from overflowing the card */
   
+}
+
+.placeholderdiv{
+  width: 100%;
+  height: 5%;
 }
 
 #glasscard{
@@ -132,6 +138,7 @@ body {
     font-size: 1.7rem;
   }
 
+
   @media screen and (max-width: 600px) {
     #titlediv{
         font-size: 1.2rem;
@@ -218,6 +225,7 @@ body {
     width: 80%;
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
 
   #textcontainer ul{
@@ -226,10 +234,16 @@ body {
   }
 
   #textcontainer ul li{
-    width: 100%;
     place-items: center;
+    text-align: center;
   }
 
   #textcontainer ul li p{
-    text-align: left;
+    font-size: 1.1rem;
+    min-width:100% !important;
   }
+
+  #textcontainer ul.b {
+    list-style: none; /* Removes default bullets */
+    padding: 0;       /* Ensures no extra padding on the list */
+}
