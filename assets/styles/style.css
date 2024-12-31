@@ -252,14 +252,14 @@ body {
 
 /* buttons */
 button {
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: white;
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 2.813rem;
+  height: 2.813rem;
   opacity: 0.75;
   border: 1px solid #e7eae8;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   animation: bounce_513 1s infinite;
 }
@@ -297,4 +297,18 @@ button {
 
 .RL{
   rotate: 270deg;
+}
+
+@media screen and (max-width: 780px) {
+  button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+  }
+  .spacer{
+    width: 18%;
+  }
+  #project{
+    width: 64%;
+  }
 }
