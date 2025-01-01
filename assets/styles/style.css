@@ -18,6 +18,14 @@
     align-items: center;
 }
 
+
+/* 
+@media screen and (max-width: 600px) {
+  #menu{
+    margin-top: 5vh;
+  }
+} */
+
 @font-face {
     font-family: title;
     src: url(../font/LEMONMILK-Bold.otf);
@@ -40,7 +48,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  overflow: auto; /* Prevents internal content from overflowing the card */
+  height: 100vh;
+  overflow-y: auto;
   
 }
 
@@ -57,8 +66,9 @@ body {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     min-width: 90%;
-    min-height: 85%;
+    min-height: 90vh;
     max-width: 95%;
+    margin: auto;
 }
 @media (hover: none) and (pointer: coarse) {
   #glasscard {
@@ -291,6 +301,9 @@ button {
   width: 10%;
 }
 
+.spacerbottom{
+  height: 5vh;
+}
 .RR{
   rotate: 90deg;
 }

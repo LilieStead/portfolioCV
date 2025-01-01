@@ -1,23 +1,18 @@
-<head></head>
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head id="head">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <header>
 
 </header>
 
-<body class="flexcontainer">
-    <div class="placeholderdiv"></div>
-    <div class="centercontents">
-        <div id="glasscard">
-            <div id="menu">
-                <p><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></p>
-                <p><a href="projects.html"><i class="fa fa-info-circle" aria-hidden="true"></a></i></p>
-                <p><i class="fa fa-code-fork" aria-hidden="true"></i></p>
-            </div>
+<body>
+    <div class="spacerbottom"></div>
+    <div id="glasscard">
+        <div id="menu">
+            <!-- menu jquery -->
+        </div>
+        <div>
             <div class="flexcontainer" style="justify-content: flex-start;">
                 <div id="usericon">
                     <p><i class="fa fa-user" aria-hidden="true"></i></p>
@@ -44,12 +39,16 @@
                 </ul>
                 <p>I am always eager to take on new challenges and collaborate with forward-thinking teams. Whether it’s developing cutting-edge applications or inspiring the next generation of developers, I am committed to driving innovation and achieving impactful results.</p>
             </div>
-    
+            
         </div>
 
     </div>
-    
-    <div class="placeholderdiv" ></div>
-
-    
+    <div class="spacerbottom"></div>
 </body>
+
+<script>
+$(document).ready(function(){
+    $("#menu").load("assets/Jquery/menu.html");
+    $("#head").load("assets/Jquery/head.html");
+  });
+</script>
