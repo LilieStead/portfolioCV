@@ -325,3 +325,26 @@ button {
     width: 64%;
   }
 }
+
+.projectthumbnail{
+  width: 90%;
+  height: auto;
+  align-self: center;
+}
+
+#projecttitle h1{
+  font-family: title;
+  color: #fff;
+  text-align: center;
+}
+
+#projecttitle i{
+  color: #fff;
+  transition: 0.5s;
+}
+
+
+#projecttitle{
+  text-align: center;
+}
+
