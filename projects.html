@@ -1,9 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
 <head id="head">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .projectthumbnail {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <header>
-
 </header>
 
 <body>
@@ -18,16 +24,14 @@
                 <button class="RL">
                   ↑
                 </button>
-
             </div>
             <div id="project">
                 <div id="projecttitle">
                         <h1>Study Buddy - Hull College <a href="https://elevate.hull-college.ac.uk/ai/?lan=en" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></h1>
-                        
-                    <p>I developed a web-based solution for Hull College to support students whose first language is not English. Built using HTML, CSS, and JavaScript, the app connects to an external API to provide seamless translation into multiple languages. This inclusive platform enhances accessibility, helping students engage with college resources and materials effectively.</p>
-                </div>
-                <div class="centercontents">
-                    <img class="projectthumbnail" src="assets/img/PHpng.png" alt="Image of study buddy in polish">
+                        <div class="centercontents">
+                            <img class="projectthumbnail" id="img1" src="assets/img/PHpng.png" onclick="toggleImg()" alt="Image of study buddy in polish">
+                        </div>
+                        <p>I developed a web-based solution for Hull College to support students whose first language is not English. Built using HTML, CSS, and JavaScript, the app connects to an external API to provide seamless translation into multiple languages. This inclusive platform enhances accessibility, helping students engage with college resources and materials effectively.</p>
                 </div>
 
             </div>
@@ -36,10 +40,8 @@
                 <button class="RR">
                   ↑
                 </button>
-
             </div>
         </div>
-
     </div>
     <div class="spacerbottom"></div>
 </body>
@@ -48,5 +50,8 @@
 $(document).ready(function(){
     $("#menu").load("assets/Jquery/menu.html");
     $("#head").load("assets/Jquery/head.html");
-  });
+});
+
 </script>
+
+<script src="assets/js/enlargeimg.js"></script>

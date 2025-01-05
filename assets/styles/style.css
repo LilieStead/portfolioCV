@@ -348,3 +348,42 @@ button {
   text-align: center;
 }
 
+#projecttitle p{
+  font-family: main;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 800px) {
+  #projecttitle h1{
+    font-size: 1.2rem;
+  }
+  #projecttitle p{
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .enlarged {
+    transform: scale(1.5) translate(0, 0); /* Scale up and keep centered */
+  }
+}
+
+
+.projectthumbnail {
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
+  position: relative;
+  z-index: 1;
+  transform-origin: center; /* Scale from the center */
+  width: 80%;
+  height: auto;
+}
+
+.enlarged {
+  transform: scale(1.2) translate(0, 0); /* Scale up and keep centered */
+  z-index: 9999; /* Ensure it's on top of other elements */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for emphasis */
+}
+
+
