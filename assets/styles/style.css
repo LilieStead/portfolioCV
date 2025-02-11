@@ -82,7 +82,7 @@ body {
 
 #menu{
     min-width: 100%;
-    min-height: 8%;
+    height: 5vh;
     background: rgb(24 25 26 / 60%);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 10px 10px 0 0;
@@ -99,22 +99,17 @@ body {
 
 #menu p{
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0 0.8rem;
     transition: 0.2s;
     margin-right: 0.8rem;
     transition: 0.3s;
     border-radius: 20px;
+    box-shadow: 6px 5px 15px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px 5px 15px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 5px 15px -4px rgba(0,0,0,0.75);
 }
 
-#menu p:hover{
-    padding: 0 1rem;
-    border-radius: 20px;
-    animation: 0.5s;
-    background-color: #747474;
-    transition: 0.3s;
-    cursor: pointer;
-}
 
 #usericon{
     background-color: rgb(24 25 26 / 60%);
@@ -324,6 +319,21 @@ button {
   #project{
     width: 64%;
   }
+
+  #projectalignment{
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 0 0;
+    
+  }
+  
+  #projectalignment p {
+    width: 100% !important;
+  }
+  #projectalignment #proimgdiv{
+    width: 100% !important;
+  }
+
 }
 
 .projectthumbnail{
@@ -361,6 +371,9 @@ button {
   #projecttitle p{
     font-size: 0.8rem;
   }
+  .links{
+    margin-top: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 1000px){
@@ -396,3 +409,54 @@ button {
 }
 
 
+#projectalignment{
+  display: flex;
+  
+}
+
+#projectalignment p {
+  width: 40%;
+  margin-left: 0.5rem;
+  align-content: center;
+
+}
+#projectalignment #proimgdiv{
+  width: 60%;
+  max-height: 100%;
+  align-content: center;
+
+
+}
+
+
+#projectalignment #proimgdiv img{
+ width: 60%;
+ max-height: 35vh;
+ align-content: center;
+}
+
+.links{
+  margin-top: 1rem;
+}
+
+
+.fa-home{
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  background-color: #F05247;
+  cursor: pointer;
+}
+
+.fa-info-circle{
+  padding: 0.5rem 0.8rem;
+  border-radius: 25px;
+  background-color: #EBB256;
+  cursor: pointer;
+}
+
+.fa-code-fork{
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  background-color: #85C662;
+  cursor: pointer;
+}
