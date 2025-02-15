@@ -289,11 +289,11 @@ button {
 }
 
 #project{
-  width: 80%;
+  width: 85%;
 }
 
 .spacer{
-  width: 10%;
+  width: 7%;
 }
 
 .spacerbottom{
@@ -314,10 +314,10 @@ button {
     border-radius: 0.5rem;
   }
   .spacer{
-    width: 18%;
+    width: 15%;
   }
   #project{
-    width: 64%;
+    width: 70%;
   }
 
   #projectalignment{
@@ -373,6 +373,10 @@ button {
   }
   .links{
     margin-top: 1.5rem;
+  }
+  #projectalignment #proimgdiv img{
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 
@@ -430,8 +434,8 @@ button {
 
 
 #projectalignment #proimgdiv img{
- width: 60%;
- max-height: 35vh;
+ width: 70%;
+ height: auto;
  align-content: center;
 }
 
