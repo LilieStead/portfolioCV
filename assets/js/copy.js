@@ -12,6 +12,33 @@ function copyText(text) {
     
     // Remove the temporary element
     document.body.removeChild(tempTextArea);
+    
+    // Show popup
+    showCopyPopup();
+}
 
-    alert("Copied: " + text);
+document.addEventListener("DOMContentLoaded", () => {
+    let popup = document.getElementById("popup");
+    if (popup) {
+        popup.classList.remove("show", "hide");
+        popup.style.display = "none";
+    }
+});
+
+function showCopyPopup() {
+    let popup = document.getElementById("popup");
+
+    if (!popup) return;
+
+    popup.style.display = "block"; // Make it visible before animating
+    setTimeout(() => popup.classList.add("show"), 10); // Small delay for smooth animation
+
+    setTimeout(() => {
+        popup.classList.remove("show");
+        popup.classList.add("hide"); // Fade out effect
+        setTimeout(() => {
+            popup.style.display = "none"; // Fully hide after animation
+            popup.classList.remove("hide"); // Reset state
+        }, 400);
+    }, 2000);
 }
