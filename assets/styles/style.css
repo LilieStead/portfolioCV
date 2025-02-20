@@ -100,7 +100,6 @@ body {
 #menu p{
     color: #fff;
     font-size: 1.5rem;
-    padding: 0 0.8rem;
     transition: 0.2s;
     margin-right: 0.8rem;
     transition: 0.3s;
@@ -451,7 +450,7 @@ button {
   cursor: pointer;
 }
 
-.fa-info-circle{
+.fa-phone{
   padding: 0.5rem 0.8rem;
   border-radius: 25px;
   background-color: #EBB256;
@@ -621,4 +620,40 @@ button {
 
 #contactbody{
   overflow-y:hidden !important;
+}
+
+
+@media screen and (max-width: 300px){
+
+#menu p{
+  font-size: 1rem;
+}
+}
+
+
+/* Scrollbar track */
+body::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #F5F5F5;
+}
+
+/* Scrollbar itself */
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+/* Scrollbar handle */
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+#note{
+  height: 100%;
+}
+#note p{
+  text-align: center;
+  font-family: main;
+  color: #fff;
+  margin-top: 2rem;
 }
