@@ -657,3 +657,8 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   margin-top: 2rem;
 }
+
+
+.disabled{
+  cursor: not-allowed !important;
+}
